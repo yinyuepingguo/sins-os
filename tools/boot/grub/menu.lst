@@ -1,0 +1,3 @@
+title sins 
+    root (hd0,0)
+    kernel /boot/sins ro
