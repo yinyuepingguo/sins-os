@@ -1,0 +1,44 @@
+#SINS is an os kernel.Simplicity is not simple.
+INTRODUCTION
+    Hello, every body.I have write a multi-task, kernel-preemption kernel.It can run in i386-pc but just support old MINIX
+filesystem(read-only)mode now(like old linux 0.11).
+    It just use 12000 lines to create this kernel, contains bootsect, scheduler, memory-mangement, a toy vfs,
+irq management, a toy singal model and so on. It used me half a year to do research, think and coding. 
+    Now, to get down to business.
+    
+    
+INSTALL
+    -----------------------------------------------------------------------------------------
+    1.1) pull this project to you computer(Need a unix-like environment, such as LINUX).
+    1.2) search BACKUP_DIR and MOUNT_DIR in Makefile.You need create two directory for them.
+       I create /var/sins.backup for BACKUP_DIR and /var/sins.disk for MOUNT_DIR.
+    1.3) install BOCHS or QEMU for emulation.
+    
+    2.1) run `make help` to get some useful commands.
+    2.2) run `make bochs` or `make qemu`.
+    
+    3.1) If you have got a shell. CONGRATULATIONS! You have run it succesfully!
+    3.2) I have write some user-mode programs such as wc, ls, cat, echo, date, ps and built in cd, exit, kill
+         If you have no idea, type `cd bin` and `ls`.
+    -------------------------------over-------------------------------------------------------
+    IF you failed in mount. confirm your /dev/loop0 is not used and retry. Sometimes I need try three times.
+    
+    Don't expect too much of it. It's just a toy os NOW.
+    This project is the practice of a meaningful to me. I can grasp the general framework of the kernel,
+but also get a lot of experience and lessons. I hope to be able to reconstruct all of the code,
+change a kind of design thinking, perhaps the kernel design can become more simple, faster and more scalable.
+
+    You will give me a lot of power for its support. Now I am a graduating college students.
+I also want to have plenty of time to let me have the freedom of study and faster update my kernel.
+    I hope this kernel can have practical value. Obviously it is not, he is just a child.
+But it is precisely because of this, he has a lot of potential. I hope he can have a POSIX programming
+interface, because WINDOWS really do too bad.
+    If you read Linux source code, I read the kernel should be a simple thing. But we must remember 
+that it is, and there are many different linux. If not, I wrote this thing and what is the meaning of it.
+You should pay more attention to the interface provided by the kernel rather than the interface implementation.
+    I did not choose the optimum algorithm. Some obscure part I may be used directly in the early
+version of the code, may be I was part of this understanding and deviation.
+
+    If you have any thoughts on this project, I hope you can contact me.
+                                                                                yinyuepingguo@qq.com
+                                                                                        Jiong Kui.Zhang
