@@ -1,5 +1,6 @@
 #SINS is an os kernel.Simplicity is not simple.
 
+
 INTRODUCTION
     Hello, every body.I have write a multi-task, kernel-preemption kernel. It can run in i386-pc but just support old MINIX filesystem(read-only)mode now (like old linux 0.11).
     It just use 12000 lines to create this kernel, contains bootsect, scheduler, memory-mangement, a toy vfs, irq management, a toy singal model and so on. It used me half a year to do research, think and coding. Now, to get down to business.
